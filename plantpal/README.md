@@ -1,22 +1,9 @@
 # 2DV609 Project
 
-## Group Members
-Erik Wen Han Sun \<es225ki@student.lnu.se>
-
-Leona Svensgård \<jw223jc@student.lnu.se>
-
-Meichen Ji \<mj224nu@student.lnu.se>
-
-Yan Song \<ys222ei@student.lnu.se>
-
-Zejian Wang \<zw222bb@student.lnu.se>
-
-
 ## How to run the program
 The application is written by JavaFx, Java, and some SQL queries.
 
 The application should be built first using `gradle build`. Then it can be run using `gradle run`.
-
 
 
 ## SQL connection - Online
