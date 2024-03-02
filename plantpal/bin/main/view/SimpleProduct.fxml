@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <StackPane>
+         <children>
+            <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="264.0" prefWidth="257.0" spacing="10.0" styleClass="post_background" stylesheets="@Post_css.css">
+               <children>
+                  <HBox fx:id="imagesHbox" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="169.0" prefWidth="256.0" spacing="22.0">
+                     <children>
+                        <ImageView fx:id="productImg" fitHeight="150.0" fitWidth="273.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/lemon.jpg" />
+                           </image>
+                           <HBox.margin>
+                              <Insets top="5.0" />
+                           </HBox.margin>
+                        </ImageView>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="15.0" right="15.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="38.0" prefWidth="257.0" spacing="10.0">
+                     <children>
+                        <Label fx:id="priceLabel" maxWidth="1.7976931348623157E308" prefHeight="28.0" prefWidth="103.0" style="-fx-text-fill: #D00B0C;" text="SEK 70" wrapText="true">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </Label>
+                        <VBox alignment="CENTER" prefHeight="60.0">
+                           <children>
+                              <HBox alignment="CENTER_LEFT" />
+                              <HBox alignment="CENTER_LEFT" prefHeight="21.0" prefWidth="142.0" spacing="20.0">
+                                 <children>
+                                    <Label fx:id="dateLabel" prefHeight="21.0" prefWidth="0.0" textFill="#616770">
+                                       <font>
+                                          <Font name="Segoe UI Historic" size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <HBox>
+                                       <children>
+                                          <ImageView fitHeight="100.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@img/ic_location.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label fx:id="locationLabel" prefHeight="21.0" prefWidth="78.0" textFill="#616770" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets left="20.0" right="20.0" top="20.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="5.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <Label fx:id="textContent" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="221.0" text="This is a long content. Very very long.cdvvdfbffdb" wrapText="true">
+                     <VBox.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Segoe UI Historic" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </StackPane>
+   </children>
+</VBox>

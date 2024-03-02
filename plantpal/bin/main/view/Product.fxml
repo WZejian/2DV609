@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="productVboxPage" prefHeight="648.0" prefWidth="556.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <StackPane>
+         <children>
+            <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="538.0" spacing="10.0" styleClass="post_background" stylesheets="@Post_css.css">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="54.0" prefWidth="412.0" spacing="10.0">
+                     <children>
+                        <ImageView fx:id="userImg" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/user.png" />
+                           </image>
+                        </ImageView>
+                        <VBox alignment="CENTER" prefHeight="60.0">
+                           <children>
+                              <HBox alignment="CENTER_LEFT">
+                                 <children>
+                                    <Label fx:id="nicknameLabel">
+                                       <font>
+                                          <Font name="Segoe UI Semibold" size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" spacing="20.0">
+                                 <children>
+                                    <Label fx:id="dateLabel" prefHeight="21.0" prefWidth="162.0" textFill="#616770">
+                                       <font>
+                                          <Font name="Segoe UI Historic" size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <HBox>
+                                       <children>
+                                          <ImageView fitHeight="100.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@img/ic_location.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label fx:id="locationLabel" prefHeight="17.0" prefWidth="99.0" />
+                                          <HBox prefHeight="23.0" prefWidth="15.0" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <Button fx:id="backToMarketBtn" mnemonicParsing="false" onAction="#backToMarketBtnClick" styleClass="greenBtn" stylesheets="@Product_css.css" text="BackToMarket">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Button>
+                     </children>
+                     <padding>
+                        <Insets left="20.0" right="20.0" top="20.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="5.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <Label fx:id="priceLabel" maxWidth="1.7976931348623157E308" style="-fx-text-fill: #D00B0C;" text="\$ 30.2" wrapText="true">
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="textContent" maxWidth="1.7976931348623157E308" text="This is a long content. Very very long." wrapText="true">
+                     <VBox.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Segoe UI Historic" size="18.0" />
+                     </font>
+                  </Label>
+                  <HBox fx:id="imagesHbox" alignment="CENTER" spacing="22.0">
+                     <children>
+                        <ImageView fx:id="productImg" fitHeight="407.0" fitWidth="402.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/img2.jpg" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_RIGHT" spacing="20.0">
+                     <padding>
+                        <Insets left="10.0" right="10.0" />
+                     </padding>
+                     <children>
+                        <Button fx:id="deleteBtn" mnemonicParsing="false" onAction="#deleteBtnClick" styleClass="greenBtn" stylesheets="@Product_css.css" text="Delete">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="sendMsgBtn" mnemonicParsing="false" onAction="#sendMsgBtnClick" styleClass="greenBtn" stylesheets="@Product_css.css" text="Send a message to seller">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="addOrderBtn" mnemonicParsing="false" onAction="#addOrderBtnClick" styleClass="greenBtn" stylesheets="@Product_css.css" text="Add to order">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox fx:id="soldoutvbox" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="311.0" prefWidth="323.0">
+               <children>
+                  <ImageView fx:id="soldOutImage" fitHeight="299.0" fitWidth="297.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0.4;">
+                     <image>
+                        <Image url="@img/ic_sold.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </VBox>
+         </children>
+      </StackPane>
+   </children>
+</VBox>

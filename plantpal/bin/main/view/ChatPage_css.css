@@ -1,0 +1,77 @@
+.background {
+  -fx-background-color: #FFFFFF;
+}
+
+.yellowbg {
+  -fx-background-color: #F2EBDB;
+}
+
+.scroll-pane-Part > .viewport {
+  -fx-background-color: transparent; 
+}
+
+.scroll-pane-Part {
+  -fx-background: #F2EBDB;
+}
+
+.greenBtn {
+  -fx-background-color: #A8C3B5;
+  -fx-background-radius: 20;
+}
+
+.bgTransparent {
+  -fx-background-color: rgba(0,0,0,0);
+}
+
+.bottom-border {
+  -fx-border-width: 0 0 1 0;
+  -fx-border-color: #A8C3B5;
+}
+
+.top-border {
+  -fx-border-width: 2 0 0 0;
+  -fx-border-color: #A8C3B5;
+}
+
+.right-border {
+  -fx-border-width: 0 2 0 0;
+  -fx-border-color: #A8C3B5;
+}
+
+
+.text-area .scroll-pane {
+  -fx-background-color: transparent;
+}
+.text-area .scroll-pane .viewport {
+  -fx-background-color: transparent;
+}
+.text-area .scroll-pane .content{
+  -fx-background-color: #FFFFFF;
+}
+
+.textEnterField {
+  -fx-border-color: #A8C3B5;
+  -fx-border-width: 1.2;
+  -fx-border-radius: 20;
+  -fx-background-color: #FFFFFF;
+  -fx-background-radius: 20;
+}
+
+.scroll-bar:horizontal, .scroll-bar:vertical {
+  -fx-background-color:transparent;
+}
+
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb {
+  -fx-background-color: #A8C3B5;
+  -fx-background-radius: 5;
+}
+
+
+.chatbox {
+  -fx-border-width: 1 1 1 1;
+  -fx-border-color: #606266;
+  -fx-border-radius: 20;
+  -fx-background-color: #FFFFFF;
+  -fx-background-radius: 20;
+}

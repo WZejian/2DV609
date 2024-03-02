@@ -1,0 +1,24 @@
+.background {
+  -fx-background-color: #F2EBDB;
+}
+
+.greenBtn {
+  -fx-background-color: #A8C3B5;
+  -fx-background-radius: 20;
+}
+
+.bottom-border {
+  -fx-border-width: 0 0 1 0;
+  -fx-border-color: #606266;
+}
+
+.post_background {
+  -fx-background-color: #FFFFFF;
+  -fx-background-radius: 15;
+}
+
+
+.history_font {
+  -fx-font-family: 'Courier New';
+  -fx-font-size: 15px;
+}

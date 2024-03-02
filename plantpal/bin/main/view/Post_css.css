@@ -1,0 +1,26 @@
+
+.top-border {
+    -fx-border-width: 1 0 0 0;
+    -fx-border-color: #606266;
+}
+
+.post_background {
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 15;
+}
+
+.arrowBtn {
+    -fx-background-color: #FFFFFF;
+}
+
+.tag {
+    -fx-background-color: #A8C3B5;
+    -fx-background-radius: 20;
+    -fx-font-size: 15px;
+    -fx-padding: 0 10 0 10;
+}
+
+.greenBtn {
+    -fx-background-color: #A8C3B5;
+    -fx-background-radius: 20;
+}

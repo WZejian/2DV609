@@ -1,0 +1,32 @@
+.background {
+    -fx-background-color: #F2EBDB;
+}
+
+.followBtn {
+    -fx-background-color: #A8C3B5;
+    -fx-background-radius: 25;
+
+}
+
+.tag {
+    -fx-background-color: #A8C3B5;
+    -fx-background-radius: 20;
+    -fx-font-size: 15px;
+}
+
+.postTypeBtn {
+    -fx-background-color: #F2EBDB;
+    -fx-background-radius: 20;
+
+    -fx-border-color: #A8C3B5;
+    -fx-border-radius: 20;
+    -fx-border-width: 2 2 2 2;
+}
+
+.postTypeBtn:hover {
+    -fx-background-color: #A8C3B5;
+}
+
+.postTypeBtn:selected {
+    -fx-background-color: #A8C3B5;
+}

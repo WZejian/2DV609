@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxWidth="-Infinity" prefHeight="686.0" prefWidth="718.0" styleClass="background" stylesheets="@ProfileOverview_css.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox alignment="CENTER_LEFT" prefHeight="229.0" prefWidth="718.0" spacing="15.0">
+         <children>
+            <ImageView fx:id="avatarImage" fitHeight="166.0" fitWidth="210.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/img_not_found.PNG" />
+               </image>
+               <HBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </HBox.margin>
+            </ImageView>
+            <VBox prefHeight="178.0" prefWidth="482.0">
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <VBox prefHeight="117.0" prefWidth="258.0" spacing="5.0">
+                           <children>
+                              <Label fx:id="nicknameLabel" prefHeight="40.0" prefWidth="183.0" text="unknown">
+                                 <font>
+                                    <Font name="System Bold" size="25.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="15.0" />
+                                 </padding>
+                              </Label>
+                              <Label fx:id="idLabel" prefHeight="25.0" prefWidth="178.0" text="unknown">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fitHeight="22.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@img/ic_id_card_2.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <padding>
+                                    <Insets bottom="3.0" />
+                                 </padding>
+                              </Label>
+                              <Label fx:id="cityLabel" graphicTextGap="5.0" prefHeight="25.0" prefWidth="177.0" text="unknown">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fitHeight="22.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@img/ic_location.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <padding>
+                                    <Insets bottom="3.0" />
+                                 </padding>
+                              </Label>
+                              <Label fx:id="telLabel" graphicTextGap="5.0" prefHeight="22.0" prefWidth="185.0" text="abcdeabcdeabcde">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fitHeight="22.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@img/ic_telephone.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <HBox alignment="CENTER" prefHeight="117.0" prefWidth="218.0" spacing="30.0">
+                           <children>
+                              <Button contentDisplay="TOP" mnemonicParsing="false" prefHeight="61.0" prefWidth="105.0" styleClass="followBtn" stylesheets="@ProfileOverview_css.css" text="following">
+                                 <graphic>
+                                    <Label fx:id="followingNbLabel" text="12">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                 </graphic>
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Button>
+                              <Button contentDisplay="TOP" mnemonicParsing="false" prefHeight="61.0" prefWidth="105.0" styleClass="followBtn" stylesheets="@ProfileOverview_css.css" text="follower">
+                                 <graphic>
+                                    <Label fx:id="followerNbLabel" text="3301">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                 </graphic>
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <Label fx:id="descLabel" maxHeight="-Infinity" prefHeight="44.0" prefWidth="482.0" text="unknown but this is description long long text need to be test nowncd nnslnvks ndvjnv n ndnvlnownv ownviownvo w" wrapText="true">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin>
+            </VBox>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </HBox>
+      <HBox fx:id="tagPreview" alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="101.0" spacing="10.0">
+         <children>
+            <Label text="Interests:" underline="true">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+         </children>
+         <VBox.margin>
+            <Insets left="25.0" />
+         </VBox.margin>
+      </HBox>
+      <Line endX="578.0" fill="BLACK" startX="-100.0" stroke="#00000066">
+         <VBox.margin>
+            <Insets left="20.0" top="15.0" />
+         </VBox.margin>
+      </Line>
+      <HBox alignment="CENTER" prefHeight="48.0" prefWidth="718.0" spacing="20.0">
+         <children>
+            <ToggleButton mnemonicParsing="false" onAction="#myPostClick" prefHeight="33.0" prefWidth="96.0" selected="true" styleClass="postTypeBtn" stylesheets="@ProfileOverview_css.css" text="My Posts">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="postTypeSwitch" />
+               </toggleGroup>
+            </ToggleButton>
+            <ToggleButton mnemonicParsing="false" onAction="#savedPostClick" prefHeight="33.0" prefWidth="121.0" styleClass="postTypeBtn" stylesheets="@ProfileOverview_css.css" text="Saved Posts" toggleGroup="$postTypeSwitch">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </ToggleButton>
+         </children>
+         <VBox.margin>
+            <Insets top="15.0" />
+         </VBox.margin>
+      </HBox>
+      <VBox fx:id="postVbox" alignment="TOP_CENTER" spacing="25.0">
+         <padding>
+            <Insets top="20.0" />
+         </padding>
+         <VBox.margin>
+            <Insets bottom="10.0" />
+         </VBox.margin>
+      </VBox>
+   </children>
+</VBox>

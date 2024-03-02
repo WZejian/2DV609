@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" prefHeight="180.0" prefWidth="190.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 15;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox alignment="CENTER_LEFT" prefHeight="32.0" prefWidth="133.0">
+         <children>
+            <Label fx:id="seqNumLabel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="17.0" prefWidth="38.0" text="20/20" />
+            <Pane prefHeight="32.0" prefWidth="105.0" />
+            <Button mnemonicParsing="false" onAction="#delImgBtnClick" style="-fx-background-color: transparent;">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/ic_close.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </HBox>
+      <ImageView fx:id="imgPreview" fitHeight="122.0" fitWidth="181.0" pickOnBounds="true" preserveRatio="true" />
+      <HBox alignment="CENTER" spacing="50.0">
+         <children>
+            <Button fx:id="leftBtn" mnemonicParsing="false" onAction="#leftBtnClick" style="-fx-background-color: transparent;">
+               <graphic>
+                  <ImageView fitHeight="18.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/ic_left_arrow.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="rightBtn" mnemonicParsing="false" onAction="#rightBtnClick" style="-fx-background-color: transparent;">
+               <graphic>
+                  <ImageView fitHeight="18.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/ic_right_arrow.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+         <VBox.margin>
+            <Insets bottom="10.0" top="10.0" />
+         </VBox.margin>
+      </HBox>
+   </children>
+</VBox>

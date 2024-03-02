@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="wholePage" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="718.0" styleClass="background" stylesheets="@CreatePost_css.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox>
+         <children>
+            <Button mnemonicParsing="false" onAction="#backMarketPlaceClick" styleClass="greenBtn" text="&lt;- Back To MarketPlace" />
+         </children>
+         <VBox.margin>
+            <Insets left="30.0" right="30.0" top="20.0" />
+         </VBox.margin>
+      </HBox>
+      <VBox alignment="TOP_CENTER">
+         <children>
+            <Label alignment="CENTER" prefHeight="40.0" prefWidth="345.0" text="Publish your product">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <VBox>
+               <children>
+                  <VBox>
+                     <children>
+                        <HBox alignment="CENTER_LEFT">
+                           <children>
+                              <Label prefHeight="26.0" prefWidth="402.0" text="Step 1: Upload an image of your product" underline="true" wrapText="true">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <Button fx:id="chooseImgBtn" mnemonicParsing="false" onAction="#chooseImgBtnClick" prefHeight="29.0" prefWidth="129.0" styleClass="greenBtn" text="choose an image">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <HBox alignment="CENTER">
+                     <children>
+                        <ImageView fx:id="productImg" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/NoImage.jpg" />
+                           </image>
+                        </ImageView>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="5.0" top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <VBox>
+                     <children>
+                        <HBox prefHeight="19.0" prefWidth="678.0">
+                           <children>
+                              <Label prefHeight="30.0" prefWidth="450.0" text="Step 2: Price your product (including currency unit)" underline="true" wrapText="true">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <VBox>
+                           <children>
+                              <Label fx:id="titleCharLimit" text="0/100">
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </Label>
+                              <TextField fx:id="priceField" prefHeight="38.0" prefWidth="653.0" promptText="Such as: SEK 70" styleClass="textEnterField">
+                                 <padding>
+                                    <Insets left="10.0" right="10.0" />
+                                 </padding>
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </VBox>
+                     </children>
+                  </VBox>
+                  <VBox>
+                     <children>
+                        <HBox prefHeight="19.0" prefWidth="678.0">
+                           <children>
+                              <Label prefHeight="30.0" prefWidth="544.0" text="Step 3: Give a brief description of your product" underline="true" wrapText="true">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <VBox>
+                           <children>
+                              <Label fx:id="contentCharLimit" text="0/200">
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </Label>
+                              <TextArea fx:id="contentField" prefHeight="200.0" prefWidth="200.0" promptText="Such as: Freshly picked lemons straight from my garden, available for sale!" styleClass="textEnterField" wrapText="true">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                                 </padding>
+                              </TextArea>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </VBox>
+                     </children>
+                  </VBox>
+                  <VBox>
+                     <children>
+                        <HBox alignment="CENTER_LEFT">
+                           <children>
+                              <Label prefHeight="30.0" prefWidth="267.0" text="Step 4: Choose your location " underline="true" wrapText="true">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <padding>
+                              <Insets top="20.0" />
+                           </padding>
+                        </HBox>
+                        <HBox>
+                           <children>
+                              <ComboBox fx:id="locationCombox" styleClass="tagChooser" visibleRowCount="5">
+                                 <HBox.margin>
+                                    <Insets right="20.0" />
+                                 </HBox.margin>
+                              </ComboBox>
+                              <Button mnemonicParsing="false" onAction="#addLocationBtnClick" prefHeight="29.0" prefWidth="67.0" styleClass="greenBtn" text="add">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets right="20.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#clearLocationBtnClick" prefHeight="29.0" prefWidth="67.0" styleClass="greenBtn" text="clear">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <ScrollPane fx:id="locationPreviewPane" prefHeight="0.0" prefWidth="658.0" styleClass="imgscroll-pane" vbarPolicy="NEVER">
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                           <content>
+                              <HBox fx:id="locationPreviewHbox" spacing="10.0" />
+                           </content>
+                        </ScrollPane>
+                     </children>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </VBox>
+            <VBox alignment="CENTER">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#PublishClick" prefHeight="47.0" prefWidth="132.0" styleClass="greenBtn" text="Publish">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+            </VBox>
+         </children>
+         <VBox.margin>
+            <Insets bottom="20.0" left="30.0" right="30.0" top="10.0" />
+         </VBox.margin>
+      </VBox>
+   </children>
+</VBox>

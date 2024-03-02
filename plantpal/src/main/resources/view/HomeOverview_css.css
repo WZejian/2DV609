@@ -1,0 +1,26 @@
+.background {
+  -fx-background-color: #F2EBDB;
+}
+
+.backgroundtransparent {
+  -fx-background-color: rgba(0,0,0,0);
+}
+
+.searchbox {
+  -fx-border-color: #A8C3B5;
+  -fx-border-width: 1.2;
+  -fx-border-radius: 20;
+  -fx-background-color: #FFFFFF;
+  -fx-background-radius: 20;
+}
+
+.searchTypeBox {
+  -fx-border-width: 0 0 0 1;
+  -fx-border-color: #606266;
+  -fx-font-size: 17px;
+}
+
+.newPostBtn {
+  -fx-background-color: #A8C3B5;
+  -fx-background-radius: 20;
+}

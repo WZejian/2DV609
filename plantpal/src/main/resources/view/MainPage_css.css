@@ -1,0 +1,41 @@
+.scroll-pane-Part > .viewport {
+    -fx-background-image: url('img/rightside_background.jpg');
+    -fx-background-size: 100% 100%; 
+    -fx-background-repeat: space;
+}
+
+.scroll-bar:horizontal, .scroll-bar:vertical{
+    -fx-background-color:transparent;
+}
+  
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb {
+    -fx-background-color: #A8C3B5;
+    -fx-background-radius: 5;
+}
+
+.leftside {
+    -fx-background-color: #F2EBDB;
+}
+
+/* logout button use this as well */
+.editbutton {
+    -fx-background-color: #A8C3B5;
+    -fx-background-radius: 30;
+}
+
+.menubutton {
+  -fx-background-color: #F2EBDB;
+  -fx-alignment: center-left;
+  -fx-padding: 0 0 0 40;
+}
+
+.menubutton:hover {
+    -fx-background-color: #A8C3B5;
+}
+
+.menubutton:selected {
+    -fx-background-color: #A8C3B5;
+}
+
+

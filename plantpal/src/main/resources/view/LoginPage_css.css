@@ -1,0 +1,27 @@
+.left {
+  -fx-background-image: url('img/login_background.png');
+  -fx-background-size: 100% 100%; 
+}
+
+.backgroundtransparent {
+  -fx-background-color: rgba(0,0,0,0);
+}
+
+.typehbox {
+  -fx-border-color: #A8C3B5;
+  -fx-border-width: 1.2;
+  -fx-border-radius: 8;
+}
+
+.signinBtn {
+  -fx-background-color: #A8C3B5;
+  -fx-background-radius: 20;
+}
+
+.bluetext {
+  -fx-text-fill: #0074CC;
+}
+
+.redtext {
+  -fx-text-fill: #D00B0C;
+}

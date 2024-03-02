@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="688.0" prefWidth="1082.0" stylesheets="@MainPage_css.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="leftside" stylesheets="@MainPage_css.css" BorderPane.alignment="CENTER">
+         <children>
+            <VBox alignment="CENTER" layoutX="2.0" layoutY="29.0" prefHeight="172.0" prefWidth="198.0" spacing="15.0">
+               <children>
+                  <ImageView fx:id="avatarImage" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/ic_avatar_default.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </ImageView>
+                  <Label fx:id="displayNicknameLabel" alignment="CENTER" prefHeight="30.0" prefWidth="178.0" text="nickname">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Button mnemonicParsing="false" onAction="#editProfileBtnClick" prefHeight="27.0" styleClass="editbutton" text="Edit Profile">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+               <opaqueInsets>
+                  <Insets top="50.0" />
+               </opaqueInsets></VBox>
+            <VBox alignment="CENTER_LEFT" layoutY="237.0" prefHeight="374.0" prefWidth="200.0">
+               <children>
+                  <HBox prefHeight="46.0" prefWidth="200.0">
+                     <children>
+                        <ToggleButton graphicTextGap="7.0" mnemonicParsing="false" onAction="#myPageBtnClick" prefHeight="58.0" prefWidth="206.0" styleClass="menubutton" stylesheets="@MainPage_css.css" text="My Page">
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@img/ic_profile.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <toggleGroup>
+                              <ToggleGroup fx:id="leftMenuToggleGroup" />
+                           </toggleGroup>
+                        </ToggleButton>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="46.0" prefWidth="200.0">
+                     <children>
+                        <ToggleButton graphicTextGap="7.0" mnemonicParsing="false" onAction="#homeBtnClick" prefHeight="58.0" prefWidth="206.0" styleClass="menubutton" stylesheets="@MainPage_css.css" text="Home" toggleGroup="$leftMenuToggleGroup">
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@img/ic_home.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </ToggleButton>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="46.0" prefWidth="200.0">
+                     <children>
+                        <ToggleButton graphicTextGap="7.0" mnemonicParsing="false" onAction="#marketBtnClick" prefHeight="58.0" prefWidth="206.0" styleClass="menubutton" stylesheets="@MainPage_css.css" text="Marketplace" toggleGroup="$leftMenuToggleGroup">
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@img/ic_marketplace.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </ToggleButton>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="46.0" prefWidth="200.0">
+                     <children>
+                        <ToggleButton graphicTextGap="7.0" mnemonicParsing="false" onAction="#orderBtnClick" prefHeight="58.0" prefWidth="206.0" styleClass="menubutton" stylesheets="@MainPage_css.css" text="My Order" toggleGroup="$leftMenuToggleGroup">
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@img/ic_order.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </ToggleButton>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="46.0" prefWidth="200.0">
+                     <children>
+                        <ToggleButton graphicTextGap="7.0" mnemonicParsing="false" onAction="#friendsBtnClick" prefHeight="58.0" prefWidth="206.0" styleClass="menubutton" stylesheets="@MainPage_css.css" text="Friends" toggleGroup="$leftMenuToggleGroup">
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@img/ic_friends.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </ToggleButton>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="46.0" prefWidth="200.0">
+                     <children>
+                        <ToggleButton graphicTextGap="7.0" mnemonicParsing="false" onAction="#chatBtnClick" prefHeight="58.0" prefWidth="206.0" styleClass="menubutton" stylesheets="@MainPage_css.css" text="Chat" toggleGroup="$leftMenuToggleGroup">
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@img/ic_chat.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </ToggleButton>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="46.0" prefWidth="200.0">
+                     <children>
+                        <ToggleButton graphicTextGap="7.0" mnemonicParsing="false" onAction="#pointsCenterBtnClick" prefHeight="58.0" prefWidth="206.0" styleClass="menubutton" stylesheets="@MainPage_css.css" text="Points Center" toggleGroup="$leftMenuToggleGroup">
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@img/ic_tree_2.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </ToggleButton>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <Button layoutX="55.0" layoutY="631.0" mnemonicParsing="false" onAction="#logoutBtnClick" prefHeight="27.0" prefWidth="91.0" styleClass="editbutton" text="Logout">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <ScrollPane fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" styleClass="scroll-pane-Part" BorderPane.alignment="CENTER">
+         <content>
+            <VBox fx:id="rightside" alignment="TOP_CENTER" />
+         </content>
+      </ScrollPane>
+   </center>
+</BorderPane>

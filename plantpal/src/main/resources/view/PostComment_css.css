@@ -1,0 +1,5 @@
+.top-border {
+  -fx-border-width: 2 0 0 0;
+  -fx-border-color: #606266;
+  -fx-border-style: dashed;  
+}
