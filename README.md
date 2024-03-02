@@ -38,8 +38,3 @@ Here are several accounts you can use to login. You can also register a new acco
 1. Please note that there is a chance of database connector disconnneting after a period of inactivity.
 2. When enter your credentials please don't use tab to jump to next text field. Please use mouse to click.
 3. Please don't trust error handling too much. Stick to reasonable action :D
-
-## Gitlab
-The development process is trackable through our gitlab repository. Project link: https://gitlab.lnu.se/ys222ei/plantpal
-
-Permission is needed to view the repo. Please send a message to Yan Song \<ys222ei@student.lnu.se> to get permisson.
